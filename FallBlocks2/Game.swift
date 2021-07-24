@@ -37,15 +37,28 @@ class Game {
         isGameOver = false
     }
     
-    private func createRandomTile(){
-        
+    func startGame(){
+        createTile()
+    }
+    
+    private func createTile(){
+        currentTile = Tile(blockSize: gameGrid.getBlockSize())
+        currentTile.getTile().center = CGPoint(x: gameView.center.x, y: gameView.frame.height * 0.2)
+        currentTile.setRandomValue()
+        currentTile.toggleLabel()
+        gameView.addSubview(currentTile.getTile())
     }
     
     func dropTileAtLocation(location: CGPoint){
         for i in (1 ... gameGrid.getNumCols()).reversed() {
-            let section = (gameGrid.getBlockSize() * CGFloat(i-1)) + (GAME_BOARD_EDGE_OFFSET / 2)
+            let section = (gameGrid.getBlockSize() * CGFloat(i - 1)) + (GAME_BOARD_EDGE_OFFSET / 2)
             if(location.x > section){
-                
+                let dropResult = gameGrid.dropTile(tile: currentTile, location: i - 1)
+                if(dropResult){
+                    gameGrid.collapseColumn()
+                    gameGrid.collapseRow()
+                    createTile()
+                }
                 return
             }
         }
