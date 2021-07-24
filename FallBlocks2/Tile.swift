@@ -9,7 +9,11 @@ import Foundation
 import UIKit
 
 class Tile{
-    private var value: Int
+    private var value: Int{
+        didSet{
+            valueLabel.text = "\(value)"
+        }
+    }
     private var valueLabel: UILabel
     private var tileView: UIView
     private var shouldShow: Bool = false {
@@ -33,19 +37,22 @@ class Tile{
         tileView.isUserInteractionEnabled = false
         
         valueLabel = UILabel(frame: tileView.frame)
+        valueLabel.textAlignment = .center
     }
     
     func getValue() -> Int { return value }
     func getTile() -> UIView { return tileView }
-    func toggleLabel(){ shouldShow = !shouldShow }
+    func toggleLabel() { shouldShow = !shouldShow }
+    func isEmpty() -> Bool { return value == 0 }
     
-    func show(){
+    private func show(){
         if(shouldShow){
             valueLabel.text = "\(value)"
             tileView.addSubview(valueLabel)
         }
         else{
             valueLabel.removeFromSuperview()
+            tileView.backgroundColor = .white
         }
     }
     
@@ -54,5 +61,35 @@ class Tile{
             return true
         }
         return false
+    }
+    
+    func combine(incomingTile: Tile){
+        value = value + incomingTile.getValue()
+        setColor()
+    }
+    
+    func setRandomValue(){
+        value = Int.random(in: 1..<6)
+        setColor()
+    }
+    func setColor(){
+        tileView.backgroundColor = ColorPalette.getColor(value)
+    }
+    func setValue(newValue: Int){
+        value = newValue
+        if(value == 0){
+            shouldShow = false
+            show()
+        }
+        else{
+            shouldShow = true
+            show()
+        }
+        setColor()
+    }
+    
+    func reset(){
+        shouldShow = false
+        value = 0
     }
 }
