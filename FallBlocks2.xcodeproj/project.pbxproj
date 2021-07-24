@@ -13,6 +13,9 @@
 		8090D42526AB7E9B00CD7BBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8090D42326AB7E9B00CD7BBD /* Main.storyboard */; };
 		8090D42726AB7E9C00CD7BBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8090D42626AB7E9C00CD7BBD /* Assets.xcassets */; };
 		8090D42A26AB7E9C00CD7BBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8090D42826AB7E9C00CD7BBD /* LaunchScreen.storyboard */; };
+		8090D43326AB7EA700CD7BBD /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8090D43226AB7EA700CD7BBD /* Tile.swift */; };
+		8090D43626AB7EAB00CD7BBD /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8090D43526AB7EAB00CD7BBD /* Grid.swift */; };
+		8090D43926AB811400CD7BBD /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8090D43826AB811400CD7BBD /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		8090D42626AB7E9C00CD7BBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8090D42926AB7E9C00CD7BBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8090D42B26AB7E9C00CD7BBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8090D43226AB7EA700CD7BBD /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		8090D43526AB7EAB00CD7BBD /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		8090D43826AB811400CD7BBD /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				8090D41D26AB7E9B00CD7BBD /* AppDelegate.swift */,
 				8090D41F26AB7E9B00CD7BBD /* SceneDelegate.swift */,
 				8090D42126AB7E9B00CD7BBD /* ViewController.swift */,
+				8090D43226AB7EA700CD7BBD /* Tile.swift */,
+				8090D43526AB7EAB00CD7BBD /* Grid.swift */,
+				8090D43826AB811400CD7BBD /* Game.swift */,
 				8090D42326AB7E9B00CD7BBD /* Main.storyboard */,
 				8090D42626AB7E9C00CD7BBD /* Assets.xcassets */,
 				8090D42826AB7E9C00CD7BBD /* LaunchScreen.storyboard */,
@@ -138,8 +147,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8090D42226AB7E9B00CD7BBD /* ViewController.swift in Sources */,
+				8090D43926AB811400CD7BBD /* Game.swift in Sources */,
 				8090D41E26AB7E9B00CD7BBD /* AppDelegate.swift in Sources */,
 				8090D42026AB7E9B00CD7BBD /* SceneDelegate.swift in Sources */,
+				8090D43626AB7EAB00CD7BBD /* Grid.swift in Sources */,
+				8090D43326AB7EA700CD7BBD /* Tile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
