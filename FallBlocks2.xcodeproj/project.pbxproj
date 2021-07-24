@@ -16,6 +16,7 @@
 		8090D43326AB7EA700CD7BBD /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8090D43226AB7EA700CD7BBD /* Tile.swift */; };
 		8090D43626AB7EAB00CD7BBD /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8090D43526AB7EAB00CD7BBD /* Grid.swift */; };
 		8090D43926AB811400CD7BBD /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8090D43826AB811400CD7BBD /* Game.swift */; };
+		80CB8A2126ABA27400300386 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CB8A2026ABA27400300386 /* ColorPalette.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8090D43226AB7EA700CD7BBD /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		8090D43526AB7EAB00CD7BBD /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		8090D43826AB811400CD7BBD /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		80CB8A2026ABA27400300386 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				8090D43226AB7EA700CD7BBD /* Tile.swift */,
 				8090D43526AB7EAB00CD7BBD /* Grid.swift */,
 				8090D43826AB811400CD7BBD /* Game.swift */,
+				80CB8A2026ABA27400300386 /* ColorPalette.swift */,
 				8090D42326AB7E9B00CD7BBD /* Main.storyboard */,
 				8090D42626AB7E9C00CD7BBD /* Assets.xcassets */,
 				8090D42826AB7E9C00CD7BBD /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80CB8A2126ABA27400300386 /* ColorPalette.swift in Sources */,
 				8090D42226AB7E9B00CD7BBD /* ViewController.swift in Sources */,
 				8090D43926AB811400CD7BBD /* Game.swift in Sources */,
 				8090D41E26AB7E9B00CD7BBD /* AppDelegate.swift in Sources */,

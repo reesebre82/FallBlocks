@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         game = Game(view: self.view, numRows:  5, numCols: 4)
+        game.startGame()
     }
     
     
